@@ -19,34 +19,46 @@ Ensure you have MongoDB and MongoShell on your machine before proceeding or inst
 
 * Switch to the database you want to create by typing the following command, in my instance i will be creating a CodeTribe database:
 
-```bash
-    use CodeTribe
+   ```bash
+       use CodeTribe
 
 
 * To verify that the database was created successfully, you must insert collections into the database. Run the following command:
 
-```bash
-    db.collection.insertMany([{name: "Facilitators"}, {name: "Trainees"}, {name: "Projects"}])
+   ```bash
+       db.collection.insertMany([{name: "Facilitators"}, {name: "Trainees"}, {name: "Projects"}])
+
+
+
 
 
 * Verify if the database is present
 
- ```bash
-     show dbs
-
-* Insert Documents within the collections
-
- ```bash
-     db.Facilitators.insertOne({ Name: "", Location:"" , Course: "" })
+    ```bash
+        show dbs
 
 
-* Insert Documents within the collections
 
- ```bash
-     db.Trainees.insertOne({ Name: "", Location: "" , Facilitator: "" })
 
 
 * Insert Documents within the collections
 
- ```bash
-     db.Trainees.insertOne({ Name: "", Course: "" , Lesson: "" })
+    ```bash
+        db.Facilitators.insertOne({ Name: "", Location:"" , Course: "" })
+
+
+
+
+
+* Insert Documents within the collections
+
+    ```bash
+        db.Trainees.insertOne({ Name: "", Location: "" , Facilitator: "" })
+
+
+
+
+* Insert Documents within the collections
+   
+    ```bash
+        db.Projects.insertOne({ Name: "", Course: "" , Lesson: "" })
